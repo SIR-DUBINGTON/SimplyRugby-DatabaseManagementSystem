@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="SimplyRugby.UserInfoPage.UserInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.UserInfoPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Background="#253D5B" Grid.Column="0"/>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1">
+            <TextBlock Text="Complete Your Profile" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontWeight="Bold" FontSize="24" Margin="0, 0, 0 ,0"/>
+            <TextBlock Text="Name:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="StaffNameTextBox" FontFamily="Cascadia Mono"   Foreground="#C9A959" Background="#253D5B" Margin="0,20"/>
+            <TextBlock Text="Email:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="EmailTextBox" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B" Margin="0,20"/>
+            <TextBlock Text="Address:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="AddressTextBox" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B"  Margin="0,20"/>
+            <TextBlock Text="Date Of Birth:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <DatePicker x:Name="DobDatePicker" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B" Margin="0,20"/>
+            <TextBlock Text="Contact No:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="ContactNumberTextBox" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B" Margin="0,20"/>
+            <TextBlock Text="Postcode:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="PostcodeTextBox" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B" Margin="0,20"/>
+            <Button Content="Submit" FontFamily="Cascadia Mono"  Foreground="#C9A959" Background="#253D5B" Click="Submit_Click" Margin="0,10,0,0" HorizontalAlignment="Center"/>
+        </StackPanel>
+        
+        <Border Background="#253D5B" Grid.Column="2"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,1011 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E71EF537-B1A3-42FB-AB70-A8662E9839F6}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SimplyRugby</RootNamespace>
+    <AssemblyName>SimplyRugby</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AboutAdmin\AboutAdmin.xaml.cs">
+      <DependentUpon>AboutAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AboutAmateur\AboutAmateur.xaml.cs">
+      <DependentUpon>AboutAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AboutPro\AboutPro.xaml.cs">
+      <DependentUpon>AboutPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminStaffHub\AdminStaffHub.xaml.cs">
+      <DependentUpon>AdminStaffHub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AmateurCoachHub\AmateurCoachHub.xaml.cs">
+      <DependentUpon>AmateurCoachHub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Coach\Coach.cs" />
+    <Compile Include="CreatePage\CreatePage.xaml.cs">
+      <DependentUpon>CreatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Guardian\Guardian.cs" />
+    <Compile Include="Help\HelpAdmin\AccountCreationAdmin.xaml.cs">
+      <DependentUpon>AccountCreationAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\AdminCreate.xaml.cs">
+      <DependentUpon>AdminCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\AmateurCreate.xaml.cs">
+      <DependentUpon>AmateurCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\CreatingTeamsAdmin.xaml.cs">
+      <DependentUpon>CreatingTeamsAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\DeleteStaffAdmin.xaml.cs">
+      <DependentUpon>DeleteStaffAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\FullScreenAdmin.xaml.cs">
+      <DependentUpon>FullScreenAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\HelpAdmin.xaml.cs">
+      <DependentUpon>HelpAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\LoggingInAdmin.xaml.cs">
+      <DependentUpon>LoggingInAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\LogoutAdmin.xaml.cs">
+      <DependentUpon>LogoutAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\NavHelpAdmin.xaml.cs">
+      <DependentUpon>NavHelpAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\ProCreate.xaml.cs">
+      <DependentUpon>ProCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\ViewingTeamsAdmin.xaml.cs">
+      <DependentUpon>ViewingTeamsAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAdmin\ViewStaffAdmin.xaml.cs">
+      <DependentUpon>ViewStaffAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\AccountCreationAmateur.xaml.cs">
+      <DependentUpon>AccountCreationAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\AdminCreateV2.xaml.cs">
+      <DependentUpon>AdminCreateV2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\AmateurCreateV2.xaml.cs">
+      <DependentUpon>AmateurCreateV2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\AttendanceLogRegisterAmateur.xaml.cs">
+      <DependentUpon>AttendanceLogRegisterAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\AttendanceLogViewAmateur.xaml.cs">
+      <DependentUpon>AttendanceLogViewAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\FullScreenAmateur.xaml.cs">
+      <DependentUpon>FullScreenAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\HelpAmateur.xaml.cs">
+      <DependentUpon>HelpAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\JuniorPlayersRegisterAmateur.xaml.cs">
+      <DependentUpon>JuniorPlayersRegisterAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\JuniorPlayersViewAmateur.xaml.cs">
+      <DependentUpon>JuniorPlayersViewAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\LoggingInAmateur.xaml.cs">
+      <DependentUpon>LoggingInAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\LogoutAmateur.xaml.cs">
+      <DependentUpon>LogoutAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\MatchLogRegisterAmateur.xaml.cs">
+      <DependentUpon>MatchLogRegisterAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\MatchLogViewAmateur.xaml.cs">
+      <DependentUpon>MatchLogViewAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\NavHelpAmateur.xaml.cs">
+      <DependentUpon>NavHelpAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\ProCreateV2.xaml.cs">
+      <DependentUpon>ProCreateV2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\RegisteringPlayersAmateur.xaml.cs">
+      <DependentUpon>RegisteringPlayersAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\RegisterPlayerStatsAmateur.xaml.cs">
+      <DependentUpon>RegisterPlayerStatsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\TrainingLogRegisterAmateur.xaml.cs">
+      <DependentUpon>TrainingLogRegisterAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\TrainingLogViewAmateur.xaml.cs">
+      <DependentUpon>TrainingLogViewAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\ViewingPlayersAmateur.xaml.cs">
+      <DependentUpon>ViewingPlayersAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\ViewingPlayerStatsAmateur.xaml.cs">
+      <DependentUpon>ViewingPlayerStatsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpAmateur\ViewingTeamsAmateur.xaml.cs">
+      <DependentUpon>ViewingTeamsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\AccountCreationMain.xaml.cs">
+      <DependentUpon>AccountCreationMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\AdminCreateMain.xaml.cs">
+      <DependentUpon>AdminCreateMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\AmateurCreateMain.xaml.cs">
+      <DependentUpon>AmateurCreateMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\HelpMainPage.xaml.cs">
+      <DependentUpon>HelpMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\LoggingInMain.xaml.cs">
+      <DependentUpon>LoggingInMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpMainPage\ProCreateMain.xaml.cs">
+      <DependentUpon>ProCreateMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\AccountCreationPro.xaml.cs">
+      <DependentUpon>AccountCreationPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\AdminCreateV3.xaml.cs">
+      <DependentUpon>AdminCreateV3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\AmateurCreateV3.xaml.cs">
+      <DependentUpon>AmateurCreateV3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\AttendanceLogRegisterPro.xaml.cs">
+      <DependentUpon>AttendanceLogRegisterPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\AttendanceLogViewPro.xaml.cs">
+      <DependentUpon>AttendanceLogViewPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\FullScreenPro.xaml.cs">
+      <DependentUpon>FullScreenPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\HelpPro.xaml.cs">
+      <DependentUpon>HelpPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\JuniorPlayersRegisterPro.xaml.cs">
+      <DependentUpon>JuniorPlayersRegisterPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\JuniorPlayersViewPro.xaml.cs">
+      <DependentUpon>JuniorPlayersViewPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\LoggingInPro.xaml.cs">
+      <DependentUpon>LoggingInPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\LogoutPro.xaml.cs">
+      <DependentUpon>LogoutPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\MatchLogRegisterPro.xaml.cs">
+      <DependentUpon>MatchLogRegisterPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\MatchLogViewPro.xaml.cs">
+      <DependentUpon>MatchLogViewPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\NavHelpPro.xaml.cs">
+      <DependentUpon>NavHelpPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\ProCreateV3.xaml.cs">
+      <DependentUpon>ProCreateV3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\RegisteringPlayersPro.xaml.cs">
+      <DependentUpon>RegisteringPlayersPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\RegisterPlayerStatsPro.xaml.cs">
+      <DependentUpon>RegisterPlayerStatsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\TrainingLogRegisterPro.xaml.cs">
+      <DependentUpon>TrainingLogRegisterPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\TrainingLogViewPro.xaml.cs">
+      <DependentUpon>TrainingLogViewPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\ViewingPlayersPro.xaml.cs">
+      <DependentUpon>ViewingPlayersPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\ViewingPlayerStatsPro.xaml.cs">
+      <DependentUpon>ViewingPlayerStatsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help\HelpPro\ViewingTeamsPro.xaml.cs">
+      <DependentUpon>ViewingTeamsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JuniorPlayerRegisterAmateurCoach\JuniorPlayerRegisterAmateurCoach.xaml.cs">
+      <DependentUpon>JuniorPlayerRegisterAmateurCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="JuniorPlayerRegisterProCoach\JuniorPlayerRegisterProCoach.xaml.cs">
+      <DependentUpon>JuniorPlayerRegisterProCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginOrCreate\LoginOrCreate.xaml.cs">
+      <DependentUpon>LoginOrCreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\Converters\DateTimeToDateStringConverter.cs" />
+    <Compile Include="MatchAndTraining\GameOption\GameOption.cs" />
+    <Compile Include="MatchAndTraining\MatchAndTrainingAmateur.xaml.cs">
+      <DependentUpon>MatchAndTrainingAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\MatchAndTrainingPro.xaml.cs">
+      <DependentUpon>MatchAndTrainingPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\MatchLogAmateur\MatchLogAmateur.xaml.cs">
+      <DependentUpon>MatchLogAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\MatchLogPro\MatchLogPro.xaml.cs">
+      <DependentUpon>MatchLogPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\MatchRecord\MatchRecord.cs" />
+    <Compile Include="MatchAndTraining\TrainingAttendanceAmateur\TrainingAttendanceAmateur.xaml.cs">
+      <DependentUpon>TrainingAttendanceAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\TrainingAttendancePro\TrainingAttendancePro.xaml.cs">
+      <DependentUpon>TrainingAttendancePro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\TrainingLogAmateur\TrainingLogAmateur.xaml.cs">
+      <DependentUpon>TrainingLogAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\TrainingLogPro\TrainingLogPro.xaml.cs">
+      <DependentUpon>TrainingLogPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\TrainingRecord\TrainingRecord.cs" />
+    <Compile Include="MatchAndTraining\ViewAttendanceAmateur\ViewAttendanceAmateur.xaml.cs">
+      <DependentUpon>ViewAttendanceAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\ViewAttendancePro\ViewAttendancePro.xaml.cs">
+      <DependentUpon>ViewAttendancePro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\ViewMatchLogAmateur\ViewMatchLogAmateur.xaml.cs">
+      <DependentUpon>ViewMatchLogAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\ViewMatchLogPro\ViewMatchLogPro.xaml.cs">
+      <DependentUpon>ViewMatchLogPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\ViewTrainingLogAmateur\ViewTrainingLogAmateur.xaml.cs">
+      <DependentUpon>ViewTrainingLogAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MatchAndTraining\ViewTrainingLogPro\ViewTrainingLogPro.xaml.cs">
+      <DependentUpon>ViewTrainingLogPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\UserNavAdminStaff\UserNavAdminStaff.xaml.cs">
+      <DependentUpon>UserNavAdminStaff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\UserNavAmateurCoach\UserNavAmateurCoach.xaml.cs">
+      <DependentUpon>UserNavAmateurCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation\UserNavProCoach\UserNavProCoach.xaml.cs">
+      <DependentUpon>UserNavProCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDevCentreAdmin\CreateTeams\CreateTeams.xaml.cs">
+      <DependentUpon>CreateTeams.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDevCentreAdmin\PlayerDevCentreAdmin.xaml.cs">
+      <DependentUpon>PlayerDevCentreAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDevCentreAdmin\StaffMember\StaffMember.cs" />
+    <Compile Include="PlayerDevCentreAdmin\ViewStaff\ViewStaff.xaml.cs">
+      <DependentUpon>ViewStaff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDevCentrePro\PlayerDevCentrePro.xaml.cs">
+      <DependentUpon>PlayerDevCentrePro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerDevCentre\PlayerDevCentre.xaml.cs">
+      <DependentUpon>PlayerDevCentre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerRegisterAmateurCoach\PlayerRegisterAmateurCoach.xaml.cs">
+      <DependentUpon>PlayerRegisterAmateurCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerRegisterProCoach\PlayerRegisterProCoach.xaml.cs">
+      <DependentUpon>PlayerRegisterProCoach.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerStatsAmateur\PlayerStatsAmateur.xaml.cs">
+      <DependentUpon>PlayerStatsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerStatsPro\PlayerStatsPro.xaml.cs">
+      <DependentUpon>PlayerStatsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerStats\PlayerStats.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="ProCoachHub\ProCoachHub.xaml.cs">
+      <DependentUpon>ProCoachHub.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SessionManager\SessionManager.cs" />
+    <Compile Include="SettingsAdmin\SettingsAdmin.xaml.cs">
+      <DependentUpon>SettingsAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsAmateur\SettingsAmateur.xaml.cs">
+      <DependentUpon>SettingsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPro\SettingsPro.xaml.cs">
+      <DependentUpon>SettingsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SkillEntry\SkillEntry.cs" />
+    <Compile Include="Team\Team.cs" />
+    <Compile Include="UserInfoPage\UserInfoPage.xaml.cs">
+      <DependentUpon>UserInfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJuniorPlayersAmateur\ViewJuniorPlayersAmateur.xaml.cs">
+      <DependentUpon>ViewJuniorPlayersAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewJuniorPlayersPro\ViewJuniorPlayersPro.xaml.cs">
+      <DependentUpon>ViewJuniorPlayersPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPlayersAmateur\ViewPlayersAmateur.xaml.cs">
+      <DependentUpon>ViewPlayersAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPlayersPro\ViewPlayersPro.xaml.cs">
+      <DependentUpon>ViewPlayersPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStatsAmateur\ViewStatsAmateur.xaml.cs">
+      <DependentUpon>ViewStatsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStatsPro\ViewStatsPro.xaml.cs">
+      <DependentUpon>ViewStatsPro.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTeamsAdmin\ViewTeamsAdmin.xaml.cs">
+      <DependentUpon>ViewTeamsAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTeamsAmateur\ViewTeamsAmateur.xaml.cs">
+      <DependentUpon>ViewTeamsAmateur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTeamsPro\ViewTeamsPro.xaml.cs">
+      <DependentUpon>ViewTeamsPro.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\CreateAccountAdmin.mkv" />
+    <Content Include="Assets\CreateAccountAmateur.mkv" />
+    <Content Include="Assets\CreateAccountPro.mkv" />
+    <Content Include="Assets\CreateTeams.mkv" />
+    <Content Include="Assets\JuniorPlayerRegister.mkv" />
+    <Content Include="Assets\LogAttendance.mkv" />
+    <Content Include="Assets\LoggingIn.mkv" />
+    <Content Include="Assets\Logout.mkv" />
+    <Content Include="Assets\MatchLog.mkv" />
+    <Content Include="Assets\NavAdmin.mkv" />
+    <Content Include="Assets\NavCoach.mkv" />
+    <Content Include="Assets\PlayerRegister.mkv" />
+    <Content Include="Assets\RegisterStats.mkv" />
+    <Content Include="Assets\StaffDeletion.mkv" />
+    <Content Include="Assets\ToggleFullscreen.mkv" />
+    <Content Include="Assets\TrainingLog.mkv" />
+    <Content Include="Assets\ViewAttendance.mkv" />
+    <Content Include="Assets\ViewJuniorPlayers.mkv" />
+    <Content Include="Assets\ViewMatchLog.mkv" />
+    <Content Include="Assets\ViewPlayers.mkv" />
+    <Content Include="Assets\ViewStaff.mkv" />
+    <Content Include="Assets\ViewStats.mkv" />
+    <Content Include="Assets\ViewTeamsAdmin.mkv" />
+    <Content Include="Assets\ViewTeamsCoach.mkv" />
+    <Content Include="Assets\ViewTrainingLog.mkv" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AboutAdmin\AboutAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AboutAmateur\AboutAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AboutPro\AboutPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminStaffHub\AdminStaffHub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AmateurCoachHub\AmateurCoachHub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreatePage\CreatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\AccountCreationAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\AdminCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\AmateurCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\CreatingTeamsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\DeleteStaffAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\FullScreenAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpAdmin\HelpAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\LoggingInAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\LogoutAdmin.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpAdmin\NavHelpAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\ProCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\ViewingTeamsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAdmin\ViewStaffAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\AccountCreationAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\AdminCreateV2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\AmateurCreateV2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\AttendanceLogRegisterAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\AttendanceLogViewAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\FullScreenAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\HelpAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\JuniorPlayersRegisterAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\JuniorPlayersViewAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\LoggingInAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\LogoutAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\MatchLogRegisterAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\MatchLogViewAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\NavHelpAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\ProCreateV2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\RegisteringPlayersAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\RegisterPlayerStatsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\TrainingLogRegisterAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\TrainingLogViewAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\ViewingPlayersAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\ViewingPlayerStatsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpAmateur\ViewingTeamsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\AccountCreationMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\AdminCreateMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\AmateurCreateMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\HelpMainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\LoggingInMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpMainPage\ProCreateMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help\HelpPro\AccountCreationPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\AdminCreateV3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\AmateurCreateV3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\AttendanceLogRegisterPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\AttendanceLogViewPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\FullScreenPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\HelpPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\JuniorPlayersRegisterPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\JuniorPlayersViewPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\LoggingInPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\LogoutPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\MatchLogRegisterPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\MatchLogViewPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\NavHelpPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\ProCreateV3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\RegisteringPlayersPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\RegisterPlayerStatsPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\TrainingLogRegisterPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\TrainingLogViewPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\ViewingPlayersPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\ViewingPlayerStatsPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Help\HelpPro\ViewingTeamsPro.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="JuniorPlayerRegisterAmateurCoach\JuniorPlayerRegisterAmateurCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="JuniorPlayerRegisterProCoach\JuniorPlayerRegisterProCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginOrCreate\LoginOrCreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginPage\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\MatchAndTrainingAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\MatchAndTrainingPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\MatchLogAmateur\MatchLogAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\MatchLogPro\MatchLogPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\TrainingAttendanceAmateur\TrainingAttendanceAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\TrainingAttendancePro\TrainingAttendancePro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\TrainingLogAmateur\TrainingLogAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\TrainingLogPro\TrainingLogPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewAttendanceAmateur\ViewAttendanceAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewAttendancePro\ViewAttendancePro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewMatchLogAmateur\ViewMatchLogAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewMatchLogPro\ViewMatchLogPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewTrainingLogAmateur\ViewTrainingLogAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MatchAndTraining\ViewTrainingLogPro\ViewTrainingLogPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\UserNavAdminStaff\UserNavAdminStaff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\UserNavAmateurCoach\UserNavAmateurCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Navigation\UserNavProCoach\UserNavProCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerDevCentreAdmin\CreateTeams\CreateTeams.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerDevCentreAdmin\PlayerDevCentreAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerDevCentreAdmin\ViewStaff\ViewStaff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerDevCentrePro\PlayerDevCentrePro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerDevCentre\PlayerDevCentre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerRegisterAmateurCoach\PlayerRegisterAmateurCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerRegisterProCoach\PlayerRegisterProCoach.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerStatsAmateur\PlayerStatsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayerStatsPro\PlayerStatsPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProCoachHub\ProCoachHub.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsAdmin\SettingsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsAmateur\SettingsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SettingsPro\SettingsPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInfoPage\UserInfoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewJuniorPlayersAmateur\ViewJuniorPlayersAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewJuniorPlayersPro\ViewJuniorPlayersPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewPlayersAmateur\ViewPlayersAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewPlayersPro\ViewPlayersPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewStatsAmateur\ViewStatsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewStatsPro\ViewStatsPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTeamsAdmin\ViewTeamsAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTeamsAmateur\ViewTeamsAmateur.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewTeamsPro\ViewTeamsPro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+    <PackageReference Include="MySql.Data">
+      <Version>8.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="MySqlConnector">
+      <Version>2.3.6</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Horizon-bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Horizon-bold-italic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Horizon-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Horizon-regular-italic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\DeltaBlock.ttf" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

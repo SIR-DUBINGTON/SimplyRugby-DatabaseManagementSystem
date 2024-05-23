@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="SimplyRugby.ViewStatsAmateur.ViewStatsAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <Grid>
+            <local:UserNavAmateurCoach x:Name="UserNavAmateurCoach" />
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- For ComboBox and Button -->
+                <RowDefinition Height="*"/>
+                <!-- For ListView -->
+            </Grid.RowDefinitions>
+            
+            <TextBlock Text="Stats Viewer" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24" Margin="0,0,0,10"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center">
+                <ComboBox x:Name="PlayerSelectionComboBox" Header="Select Player:" DisplayMemberPath="PlayerName" SelectedValuePath="SruNumber" HorizontalAlignment="Center" Margin="30"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                <Button Content="View Stats" HorizontalAlignment="Center" Click="ViewStatsButton_Click" Margin="10"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+            </StackPanel>
+
+            <ListView x:Name="StatsListView" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" HorizontalContentAlignment="Stretch">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical" Padding="10">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Player Name: " FontWeight="Bold"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding PlayerName}" FontWeight="Bold" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Position: " FontStyle="Italic"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding Position}" FontStyle="Italic" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Skill Category: "  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding SkillCategory}" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Skill: "  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding Skill}" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Skill Level: " Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding SkillLevel}" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Comments: " Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding SkillComments}" TextWrapping="Wrap" Width="300" Margin="0,0,10,0"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

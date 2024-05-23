@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="SimplyRugby.SettingsPro.SettingsPro"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavProCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <local:UserNavProCoach VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+        <Grid>
+            <TextBlock Text="Settings" Foreground="#C9A959" FontFamily="Cascadia Mono" FontWeight="Bold" FontSize="24" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+            <TextBlock Text="Enable Usage Analytics" Foreground="#C9A959" FontFamily="Cascadia Mono" FontWeight="Bold" FontSize="16" Margin="0,30,0,0" HorizontalAlignment="Center"/>
+            <ToggleSwitch x:Name="toggleSwitch" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,60,0,0" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+            <TextBlock Text="Fullscreen" Foreground="#C9A959" FontFamily="Cascadia Mono" FontWeight="Bold" FontSize="16" Margin="0,100,0,0" HorizontalAlignment="Center"/>
+            <ToggleSwitch x:Name="toggleSwitch1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,130,0,0" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"  Toggled="toggleSwitch1_Toggled"/>
+
+        </Grid>
+    </Grid>
+</Page>

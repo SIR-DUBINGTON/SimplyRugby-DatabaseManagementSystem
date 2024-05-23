@@ -1,0 +1,88 @@
+﻿<Page
+    x:Class="SimplyRugby.MatchAndTrainingAmateur.ViewMatchLogAmateur.ViewMatchLogAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:converters="using:SimplyRugby.MatchAndTrainingAmateur.Converters"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+    <Page.Resources>
+        <converters:DateTimeToDateStringConverter x:Key="DateTimeToDateStringConverter"/>
+    </Page.Resources>
+    <Grid>
+        <local:UserNavAmateurCoach HorizontalAlignment="Left" Width="200"/>
+        <TextBlock Text="Match Viewer" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0" FontSize="24" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+        <Grid Margin="0,0,0,0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="0,85,0,0" HorizontalAlignment="Center">
+                <ComboBox x:Name="TeamComboBox"
+                          Width="200"
+                          Header="Select a Team:"
+                          DisplayMemberPath="TeamName"
+                          SelectedValuePath="TeamID"
+                          SelectionChanged="TeamComboBox_SelectionChanged"
+                          Margin="0,0,10,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <ComboBox x:Name="DateComboBox"
+                          Width="200"
+                          Header="Select a Date:"
+                          SelectedValuePath="GameID"
+                          Margin="0,0,10,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding TeamName}" FontWeight="Bold"/>
+                                <TextBlock Text="{Binding GameDate, Converter={StaticResource DateTimeToDateStringConverter}}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Button x:Name="SearchButton"
+                        Content="Search"
+                        Click="SearchButton_Click" RenderTransformOrigin="0.502,0.921" Margin="0,0,0,-20"
+                        Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="20" VerticalAlignment="Center" Padding="0,60,0,0" HorizontalAlignment="Center">
+                <TextBlock Text="Team Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="TeamNameTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Game Date:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameDateTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Opposition Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="OppositionTeamTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Location:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameLocationTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Kickoff Time:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameTimeTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Result:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameResultTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Score:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameScoreTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="First Half Home Score:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="firstHalfSimplyRugbyPointsTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="First Half Opposition Score:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="firstHalfOpponentPointsTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Second Half Home Score:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="secondHalfSimplyRugbyPointsTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Second Half Opposition Score:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="secondHalfOpponentPointsTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                <TextBlock Text="Game Comments:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <TextBlock x:Name="GameCommentsTextBlock" Margin="0,0,0,10" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                
+               
+
+                <!-- Add more TextBlocks to display other game information -->
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

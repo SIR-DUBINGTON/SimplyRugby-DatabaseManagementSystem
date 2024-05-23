@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="SimplyRugby.Help.HelpAmateur.MatchLogViewAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <local:UserNavAmateurCoach x:Name="UserNavAmateurCoach" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Grid>
+            <TextBlock x:Name="WelcomeTextBlock" HorizontalAlignment="Center" FontFamily="Cascadia Mono"  VerticalAlignment="Top" Foreground="#C9A959" FontWeight="Bold" FontSize="24" Margin="0,0,0,0" Text="Help"/>
+
+            <TextBlock x:Name="VideoTextBox" HorizontalAlignment="Center" FontFamily="Cascadia Mono"  VerticalAlignment="Top" Foreground="#C9A959" FontWeight="Bold" FontSize="16" Margin="0,170,0,0" Text="Viewing Match Log Walkthrough"/>
+            <MediaElement x:Name="MyVideo" HorizontalAlignment="Center" VerticalAlignment="Center" AutoPlay="False" Stretch="Uniform"  Height="400" Width="750"/>
+            <StackPanel HorizontalAlignment="Center"  Orientation="Horizontal" Margin="0,235,0,-235">
+                <Button Content="Play" Click="PlayButton_Click" Margin="5" FontFamily="Cascadia Mono" Foreground="#C9A959"  Background="#253D5B"/>
+                <Button Content="Pause" Click="PauseButton_Click" Margin="5"  FontFamily="Cascadia Mono" Foreground="#C9A959"  Background="#253D5B"/>
+                <Button Content="Skip Backward" Click="SkipBackwardButton_Click" Margin="5" FontFamily="Cascadia Mono" Foreground="#C9A959"  Background="#253D5B"/>
+                <Button Content="Skip Forward" Click="SkipForwardButton_Click" Margin="5" FontFamily="Cascadia Mono" Foreground="#C9A959"  Background="#253D5B"/>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="SimplyRugby.PlayerStatsAmateur.PlayerStatsAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <Grid>
+            <local:UserNavAmateurCoach x:Name="UserNavAmateurCoach"/>
+        </Grid>
+        <ScrollViewer HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="600" Margin="20" Height="600">
+                <TextBlock Text="Player Stats Form" HorizontalAlignment="Center" FontWeight="Bold" FontSize="24" Margin="0,0,0,10"  Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                <ComboBox x:Name="PlayerComboBox" Header="Select Player:" DisplayMemberPath="PlayerName" SelectedValuePath="SruNumber" Margin="0,10,0,10" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                <!-- Inputs for PlayerProfileSheet -->
+                <ListView x:Name="SkillsListView">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Spacing="10" >
+                                <TextBox Width="100" PlaceholderText="Category" PlaceholderForeground="#C9A959" Text="{Binding SkillCategory, Mode=TwoWay}" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                                <TextBox Width="100" PlaceholderText="Skill" PlaceholderForeground="#C9A959" Text="{Binding Skill, Mode=TwoWay}" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B" />
+                                <Slider Minimum="1" Maximum="5" Value="{Binding SkillLevel, Mode=TwoWay}" Width="100" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                                <TextBox Width="200" PlaceholderText="Comments" PlaceholderForeground="#C9A959" Text="{Binding SkillComments, Mode=TwoWay}" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Content="Add Skill" Click="AddSkill_Click" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                <ComboBox x:Name="PositionComboBox" Header="Position" Margin="0,10,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B">
+                    <ComboBoxItem Content="Full-back"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Wing" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Centre"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Fly-half"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Scrum-half"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Number Eight"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Flanker"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Hooker"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                    <ComboBoxItem Content="Prop"  Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+                </ComboBox>
+                <Button Content="Submit Stats" Margin="0,20,0,0" Click="SubmitStatsButton_Click" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono" Background="#253D5B"/>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

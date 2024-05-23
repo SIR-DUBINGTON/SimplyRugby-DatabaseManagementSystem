@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="SimplyRugby.LoginPage.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.LoginPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Background="#253D5B" Grid.Column="0"/>
+
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300" Grid.Column="1">
+            <TextBlock Text="Login" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock Text="Username:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <TextBox x:Name="UsernameTextBox" FontFamily="Cascadia Mono"  Margin="0,10" Background="#253D5B" Foreground="#C9A959"  PlaceholderText="Username" PlaceholderForeground="#C9A959"/>
+            <TextBlock Text="Password:" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+            <PasswordBox x:Name="PasswordBox" FontFamily="Cascadia Mono"  Background="#253D5B" Foreground="#C9A959"  PlaceholderText="Password" Margin="0,10"/>
+            <Button Content="Login" Background="#253D5B" FontFamily="Cascadia Mono"  Foreground="#C9A959" Margin="0,20,0,0" Click="Login_Click" HorizontalAlignment="Center"/>
+            <Button Content="Back" Background="#253D5B" FontFamily="Cascadia Mono"  Foreground="#C9A959" Click="Back_Click" Margin="0,10,0,20" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Border Background="#253D5B" Grid.Column="2"/>
+
+    </Grid>
+</Page>

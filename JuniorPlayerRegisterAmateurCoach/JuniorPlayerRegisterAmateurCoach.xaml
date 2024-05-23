@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="SimplyRugby.JuniorPlayerRegisterAmateurCoach.JuniorPlayerRegisterAmateurCoach"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <local:UserNavAmateurCoach VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+
+        <FlipView x:Name="RegistrationFlipView" Margin="200,0,220,10">
+            <FlipViewItem Background="#F8F8FF">
+                <StackPanel HorizontalAlignment="Center">
+                    <!-- Form fields for Page 1, bind them to PlayerInfo properties -->
+                    <TextBlock Text="Junior Player Registration Form" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                    <!-- Player Information -->
+                    <TextBlock Text="Name:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="NameTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Email:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="EmailTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Postcode:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="PostcodeTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Address:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="AddressTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Date Of Birth:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <DatePicker x:Name="DobDatePicker" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Contact No:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="ContactNumberTextBox" Header="Contact No" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <!-- Doctor -->
+                    <TextBlock Text="Doctor Name:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="DoctorNameTextBox" Header="Doctor Name" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                   
+                </StackPanel>
+            </FlipViewItem>
+            <FlipViewItem Background="#F8F8FF">
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBlock Text="Doctor Contact No:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="DoctorContactNoTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Doctor Address:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="DoctorAddressTextBox" Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <!-- Preexisting Health Conditions -->
+                    <TextBlock Text="Preexisting Health Condition Details:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="HealthConditionsTextBox" Margin="0,10,0,0" AcceptsReturn="True" Height="50"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                    <!-- Guardians -->
+                    <TextBlock Text="Guardian Name:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="GuardianTextBox" Margin="0,10,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Guardian Contact No:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="GuardianContactNoTextBox" Margin="0,10,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Guardian Relationship:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="GuardianRelationshipTextBox" Margin="0,10,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Guardian Address:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="GuardianAddressTextBox" Margin="0,10,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBlock Text="Guardian Signature:" FontWeight="Bold" FontSize="16" Margin="0,10,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <TextBox x:Name="GuardianSignatureTextBox" Margin="0,0,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <!-- Team -->
+                    <TextBlock Text="Select Team Assignment:" FontWeight="Bold" FontSize="16" Margin="0,20,0,0" HorizontalAlignment="Center" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                    <ComboBox x:Name="TeamComboBox" DisplayMemberPath="TeamName" SelectedValuePath="TeamID"  Margin="0,10,0,0"  Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </FlipViewItem>
+        </FlipView>
+        <Button Content="Next" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NextButton_Click" Margin="0,0,220,225" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+        <Button Content="Previous" VerticalAlignment="Bottom" Click="PreviousButton_Click" Margin="200,0,0,225" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+        <Button Content="Register Player" Margin="0,745,0,0" Click="RegisterPlayer_Click" VerticalAlignment="Top" Background="#253D5B" Foreground="#C9A959" FontFamily="Cascadia Mono" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Page>

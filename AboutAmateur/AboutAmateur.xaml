@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="SimplyRugby.AboutAmateur.AboutAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <local:UserNavAmateurCoach VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+        <Grid>
+            <TextBlock Text="About" FontSize="24" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#C9A959" FontFamily="Cascadia Mono" FontWeight="Bold"/>
+            <TextBlock Text="What is the Management, Hierarchy, Player Development System(MHPDS)?" FontSize="24" Margin="0,325,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+            <TextBlock Text="The MHPDS is an all-in-one package for rugby player development, team administration, and staff management platform. It offers comprehensive tools and features to streamline various aspects of rugby management, including player training and development, team organization, and staff coordination. With The MHPDS, coaches and administrators can efficiently manage player profiles, track training sessions, analyze performance data, and communicate with team members. Whether you're a coach looking to enhance player development or an administrator seeking to streamline team management, The MHPDS provides the tools you need for success." 
+           Foreground="#C9A959" 
+           FontFamily="Cascadia Mono"
+           TextWrapping="Wrap"
+           Margin="554,390,0,0"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Top"
+           Width="600"/>
+
+
+        </Grid>
+    </Grid>
+</Page>

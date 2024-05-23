@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="SimplyRugby.LoginOrCreate.LoginOrCreate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.LoginOrCreate"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <!-- Define columns for the layout -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left border frame -->
+        <Border Background="#253D5B" Grid.Column="0"/>
+
+        <!-- Main content area in the center -->
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="Simply Rugby MHPDS" FontFamily="Cascadia Mono"  Foreground="#C9A959" FontSize="24" FontWeight="SemiBold" HorizontalAlignment="Center" Margin="0,0,0,40"/>
+            <Button Content="Login" FontFamily="Cascadia Mono"  Background="#253D5B" Foreground="#C9A959" Margin="0,10,0,0" Click="Login_Click" HorizontalAlignment="Center"/>
+            <Button Content="Create Account" FontFamily="Cascadia Mono"  Margin="0,10,0,0" Background="#253D5B" Foreground="#C9A959" Click="CreateAccount_Click" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <Button Content="&#xE9CE;" FontFamily="Segoe MDL2 Assets" FontSize="36" Background="#253D5B" Grid.Column="1" Foreground="#C9A959" Click="Help_Click" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+        <!-- Right border frame -->
+        <Border Background="#253D5B" Grid.Column="2"/>
+    </Grid>
+</Page>

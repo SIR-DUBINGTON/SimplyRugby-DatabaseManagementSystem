@@ -1,0 +1,62 @@
+﻿<Page
+    x:Class="SimplyRugby.PlayerDevCentreAdmin.ViewStaff.ViewStaff"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAdminStaff"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+    
+    
+    <Grid>
+        <local:UserNavAdminStaff x:Name="UserNavAdminStaff"/>
+        <Grid HorizontalAlignment="Center">
+            <ListView x:Name="StaffListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Name: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding StaffName}" FontWeight="Bold" FontSize="16" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Role: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding StaffRole}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="ID: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding StaffID}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Email: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding Email}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Contact No: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding ContactNo}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Address: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding Address}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Postcode: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding Postcode}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="DOB: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding DOB}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Username: " FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                                <TextBlock Text="{Binding username}" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            </StackPanel>
+                            <Button Content="Delete" Background="#253D5B" Foreground="#AC8181" Click="DeleteStaffMember_Click" CommandParameter="{Binding StaffID}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Page>

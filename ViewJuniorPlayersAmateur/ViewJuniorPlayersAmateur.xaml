@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="SimplyRugby.ViewJuniorPlayersAmateur.ViewJuniorPlayersAmateur"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SimplyRugby.Navigation.UserNavAmateurCoach"
+    xmlns:model="using:SimplyRugby.Player"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#F8F8FF">
+
+    <Grid>
+        <local:UserNavAmateurCoach VerticalAlignment="Top" Canvas.ZIndex="100"  HorizontalAlignment="Left" Width="200"/>
+        <TextBlock Text="Junior Player Viewer" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono" Margin="0,25,0,0"/>
+        <ScrollViewer HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,53,0,0">
+            <ListView x:Name="JuniorPlayersListView" HorizontalAlignment="Center"  Margin="0,75,0,0">
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Player">
+                        <StackPanel Orientation="Vertical" Margin="10">
+                            <TextBlock Text="Player Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind PlayerName}" FontWeight="Bold" FontSize="24" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Date of Birth:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind Dob}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono" />
+
+                            <TextBlock Text="Address:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind Address}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Contact Number:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind ContactNo}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Email:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind Email}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Postcode:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind Postcode}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Known Health Issues:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind KnownHealthIssues}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Guardian Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind GuardianName}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Guardian Contact Number:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind GuardianContactNo}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Guardian Address:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind GuardianAddress}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono" />
+
+                            <TextBlock Text="Guardian Relationship:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind GuardianRelationship}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Team Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind TeamName}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+
+                            <TextBlock Text="Coach Name:" FontWeight="Bold" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <TextBlock Text="{x:Bind CoachName}" FontStyle="Italic" Foreground="#C9A959" FontFamily="Cascadia Mono"/>
+                            <!-- Add additional fields as needed -->
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollViewer>
+    </Grid>
+</Page>
